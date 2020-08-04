@@ -1,0 +1,14 @@
+{
+  "name": "booktip",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm i && cd ./public && npm i cd ../server && npm i",
+    "start": "pm2-runtime start process.config.js"
+  },
+  "author": "Thiago Nogueira",
+  "license": "ISC",
+  "devDependencies": {
+    "pm2": "^4.4.0"
+  }
+}
