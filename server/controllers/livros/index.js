@@ -5,12 +5,13 @@ const get = (req, res) => {
   const { sort = 'dataCriacao', limit = 10, skip = 0 } = req.query
 
   Livros
+    .find()
     .sort({ [sort]: -1 })
     .limit(Number(limit))
     .skip(Number(skip))
     .lean()
     .then(async (livros) => {
-      responseHelper.success(res, { itens: livros, total: await Livros.countDocuments(query) })
+      responseHelper.success(res, { itens: livros, total: await Livros.countDocuments() })
     })
     .catch((error) => {
       responseHelper.errors.internalError(res, error)
@@ -39,7 +40,7 @@ const remove = (req, res) => {
 
 const create = (req, res) => {
   const livro = new Livros(req.body)
-
+ 
   livro.save()
     .then(data => {
       return responseHelper.success(res, data)

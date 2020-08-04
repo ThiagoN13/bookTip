@@ -1,13 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const ObjectId = Schema.Types
 
-const LivrosSchema = new Schema({
-  nome: {
-    type: String,
-    required: true,
-    trim: true
-  },
-
+const MensagemSchema = new Schema({
   mensagem: {
     type: String,
     required: true,
@@ -36,6 +31,6 @@ const LivrosSchema = new Schema({
   }
 })
 
-const Livros = mongoose.model('livros', LivrosSchema)
+const Mensagens = mongoose.model('mensagens', MensagemSchema)
 
-module.exports = Livros
+module.exports = Mensagens

@@ -8,7 +8,7 @@ module.exports = {
   },
 
   db: {
-    url: 'mongodb+srv://app-estados:eRx1Kl2fwljHPg3w@cluster0.itrd5.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    url: 'mongodb+srv://booktip-app:XjHwK2jBxjc6Znn2@cluster0.ccnxk.gcp.mongodb.net/booktip?retryWrites=true&w=majority'
   },
 
   ssl: {

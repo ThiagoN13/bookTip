@@ -1,15 +1,14 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import { IonicVueRouter } from '@ionic/vue'
 
-Vue.use(Router)
+Vue.use(IonicVueRouter)
 
-export default new Router({
+export default new IonicVueRouter({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'HomePage',
+      component: () => import(/* webpackChunkName: "home" */ '@/pages/HomePage')
     }
   ]
 })

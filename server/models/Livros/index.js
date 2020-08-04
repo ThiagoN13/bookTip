@@ -18,7 +18,7 @@ const LivrosSchema = new Schema({
     trim: true
   },
 
-  produtoVendivel: {
+  isNegociavel: {
     type: Boolean,
     default: false
   },
