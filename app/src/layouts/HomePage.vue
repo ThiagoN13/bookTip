@@ -1,12 +1,19 @@
 <template>
   <div>
+    <ion-vue-router />
 
+    <navbar></navbar>
   </div>
 </template>
 
 <script>
+import Navbar from '../components/Navbar'
+
 export default {
-  name: 'Config'
+  name: 'HomePage',
+  components: {
+    Navbar
+  }
 }
 </script>
 

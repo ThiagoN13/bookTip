@@ -1,18 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-
+  <div>
+    <ion-vue-router />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomePage',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'FullPage'
 }
 </script>
 
