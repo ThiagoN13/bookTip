@@ -36,7 +36,7 @@
     "mongoose": "^5.9.3",
     "morgan": "^1.9.1",
     "rotating-file-stream": "^1.4.6",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "husky": {
     "hooks": {
